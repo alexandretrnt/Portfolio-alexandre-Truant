@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    
+    <!-- Importation des polices depuis Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- DÉFINITION DES COULEURS DU MOODBOARD --- */
+        :root {
+            --fond-clair: #fafaf7;
+            --gris-fonce: #4d5854;
+            --gris-moyen: #7f8986;
+            --gris-clair: #b5bdb9;
+        }
+
+        /* --- STYLES GÉNERAUX --- */
+        body {
+            background-color: var(--fond-clair);
+            color: var(--gris-fonce);
+            font-family: 'Roboto Slab', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            background-color: var(--fond-clair);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--gris-clair);
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            font-family: 'Oswald', sans-serif;
+            color: var(--gris-fonce);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--gris-moyen);
+        }
+
+        /* --- SECTIONS --- */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            border-bottom: 4px solid var(--gris-fonce);
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* --- CARTES (Projets & Expériences) --- */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--gris-clair);
+            padding: 20px;
+            border-radius: 4px;
+            border-left: 8px solid var(--gris-fonce);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        
+        .tag {
+            background-color: var(--gris-moyen);
+            color: var(--fond-clair);
+            padding: 3px 8px;
+            font-size: 0.8rem;
+            border-radius: 12px;
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENU DE NAVIGATION -->
+    <nav>
+        <a href="#a-propos">À PROPOS DE MOI</a>
+        <a href="#competences">MES COMPÉTENCES</a>
+        <a href="#experience">MON EXPÉRIENCE</a>
+        <a href="#projets">MES PROJETS</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- SECTION : À PROPOS -->
+        <section id="a-propos">
+            <h2>À propos de moi</h2>
+            <p>Âgé de 18 ans, je suis actuellement étudiant en première année de BUT Hygiène, Sécurité, Environnement (HSE). Avec la même détermination que celle qu'on retrouve sur un terrain de rugby, j'aborde mes études et mes engagements avec esprit d'équipe et rigueur.</p>
+            <p>Je suis à la recherche de nouveaux défis professionnels pour mettre en pratique mes connaissances en prévention des risques et en protection de l'environnement.</p>
+        </section>
+
+        <!-- SECTION : COMPÉTENCES -->
+        <section id="competences">
+            <h2>Mes compétences</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Techniques & Scientifiques</h3>
+                    <ul>
+                        <li>Thermodynamique (Diagrammes de Clapeyron)</li>
+                        <li>Droit de l'environnement</li>
+                        <li>Évaluation et prévention des risques professionnels</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Savoir-être</h3>
+                    <ul>
+                        <li>Gestion du stress et prise de décision rapide</li>
+                        <li>Travail en équipe et cohésion</li>
+                        <li>Rigueur réglementaire</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION : EXPÉRIENCE -->
+        <section id="experience">
+            <h2>Mon expérience</h2>
+            <div class="card">
+                <h3>Sapeur-Pompier Volontaire</h3>
+                <span class="tag">Gironde</span>
+                <p>Interventions d'urgence, travail en équipe sous pression et application stricte des protocoles de sécurité. Cet engagement m'a permis de développer un grand sang-froid et un sens aigu des responsabilités face aux situations critiques.</p>
+            </div>
+        </section>
+
+        <!-- SECTION : PROJETS -->
+        <section id="projets">
+            <h2>Mes projets</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Modélisation THO & APR - Atelier Textile</h3>
+                    <span class="tag">Projet Académique</span>
+                    <p>Réalisation d'une Analyse Préliminaire des Risques (APR) et construction d'un modèle de sécurité THO pour un atelier d'impression et de broderie textile situé à Agen. Évaluation des dangers liés aux machines et à l'environnement de travail.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
