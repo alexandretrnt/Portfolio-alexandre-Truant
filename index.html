@@ -158,6 +158,16 @@
             color: var(--fond-clair);
             text-decoration: underline;
         }
+        /* --- MENU DE NAVIGATION FIXE --- */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--fond-clair); /* Cache le texte qui défile en dessous */
+            border-bottom: 2px solid var(--gris-fonce); /* Ligne pour bien séparer le menu du site */
+            padding: 15px 0; /* Un peu d'espace pour respirer */
+            width: 100%;
+        }
     </style>
 </head>
 <body>
